@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/gamedata/races
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '390'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 15:47:10 GMT
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Luchorpan","description":"Luchorpan","faction":1,"id":2},{"name":"Valkyrie","description":"Valkyrie","faction":2,"id":4},{"name":"Human","description":"Viking
+        Human","faction":2,"id":15},{"name":"Human","description":"Arthurian Human","faction":3,"id":16},{"name":"Human","description":"TDD
+        Human","faction":1,"id":17},{"name":"Pict","description":"Pictish?","faction":3,"id":18}]'
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 15:47:31 GMT
+recorded_with: VCR 3.0.1

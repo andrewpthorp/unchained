@@ -15,7 +15,7 @@ module Unchained
       class Alert
         include Unchained::Client::Mixins::Resource
 
-        attribute :id, Integer
+        attribute :id, String
         attribute :message, String
         attribute :start, String, json: 'utcDateStart'
         attribute :end, String, json: 'utcDateEnd'

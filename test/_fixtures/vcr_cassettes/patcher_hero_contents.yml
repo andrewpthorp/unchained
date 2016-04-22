@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/patcherherocontent
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '6221'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 15:44:07 GMT
+    body:
+      encoding: UTF-8
+      string: '[{"content":"<link rel=\"stylesheet\" id=\"ss-blockquote-heading-font-css\"
+        href=\"http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700\"
+        type=\"text/css\" media=\"all\"><link rel=\"stylesheet\" id=\"ss-main-heading-font-css\"
+        href=\"http://fonts.googleapis.com/css?family=Caudex:400,700\" type=\"text/css\"
+        media=\"all\"><style>  .archer-vid {position: fixed;top: 50%;left: 50%;min-width:
+        100%;min-height: 100%;width: auto;height: auto;transform: translateX(-50%)
+        translateY(-50%);background-size: cover;} .archer-hero {padding-left: 300px;
+        padding-top: 65px; overflow: hidden; text-align: center;} .archer-hero div{
+        position: absolute; z-index: 1; top: 25%; width: calc(100% - 308px); } .archer-hero
+        span {min-width: 530px; margin: auto; display: block; padding-left: 35%; }
+        .archer-hero h1 {  color: #3C2317; font-family: ''Caudex'', sans-serif ; margin:
+        0 0 15px 0; font-size: 5.5em ; padding: 0; line-height: 0.7em; font-weight:
+        400; letter-spacing: -3px;} .archer-hero h2 { font-family: ''Titillium Web'',
+        sans-serif !important; color: #674023; font-size: 1.8em; font-weight: 400;
+        margin: 0 0 5px 10px; text-transform: uppercase; letter-spacing: 5px; } </style>
+        <div class=''archer-hero herotext''> <div> <span class=\"righttext\"> <h1>Defend</h1>
+        <h2>our forest</h2></span> </div></div> <video class=''archer-vid'' src=''videos/archer.webm''
+        autoplay loop poster=\"videos/archer.jpg\"></video>","id":"56e8299ba7b0a06214e5602e","priority":7,"utcDateEnd":"2017-03-15T15:26:19.423Z","utcDateStart":"2016-03-15T15:26:19.423Z"},{"content":"
+        <link rel=\"stylesheet\" id=\"ss-blockquote-heading-font-css\" href=\"http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700\"
+        type=\"text/css\" media=\"all\"><link rel=\"stylesheet\" id=\"ss-main-heading-font-css\"
+        href=\"http://fonts.googleapis.com/css?family=Caudex:400,700\" type=\"text/css\"
+        media=\"all\"><style>  .raven-vid {position: fixed;top: 50%;left: 50%;min-width:
+        100%;min-height: 100%;width: auto;height: auto;transform: translateX(-50%)
+        translateY(-50%);background-size: cover;} .raven-hero {padding-left: 300px;
+        padding-top: 65px; overflow: hidden; text-align: center;} .raven-hero div{
+        position: absolute; z-index: 1; top: 25%; width: calc(100% - 308px); } .raven-hero
+        span { max-width: 620px; min-width: 340px; margin: auto; display: block; padding-right:
+        15%; } .raven-hero h1 {  color: #fff; font-family: ''Caudex'', sans-serif
+        ; margin: 0 0 15px 0; font-size: 5.5em ; padding: 0; line-height: 0.7em; font-weight:
+        400; letter-spacing: -3px;} .raven-hero h2 { font-family: ''Titillium Web'',
+        sans-serif !important; color: #BEE5FF; font-size: 1.8em; font-weight: 400;
+        margin: 0 0 5px 10px; text-transform: uppercase; letter-spacing: 5px; } </style>
+        <div class=''raven-hero herotext''> <div> <span> <h1>Doom   </h1> <h2>approaches</h2>
+        </span> </div></div> <video class=''raven-vid'' src=''videos/raven.webm''
+        autoplay loop poster=\"videos/raven.jpg\"></video>","id":"56ec5fcea7b0a093c8bb1eb4","priority":8,"utcDateEnd":"2017-03-15T15:26:19Z","utcDateStart":"2016-03-15T15:26:19Z"},{"content":"<link
+        rel=\"stylesheet\" id=\"ss-blockquote-heading-font-css\" href=\"http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700\"
+        type=\"text/css\" media=\"all\"><link rel=\"stylesheet\" id=\"ss-main-heading-font-css\"
+        href=\"http://fonts.googleapis.com/css?family=Caudex:400,700\" type=\"text/css\"
+        media=\"all\"><style>  .arthurian-vid {position: fixed;top: 50%;left: 50%;min-width:
+        100%;min-height: 100%;width: auto;height: auto;transform: translateX(-50%)
+        translateY(-50%);background-size: cover;} .arthurian-hero {padding-left: 300px;     padding-top:
+        65px;     overflow: hidden;     text-align: center;} .arthurian-hero div{
+        position: absolute; z-index: 1; top: 20%; width: calc(100% - 308px); } .arthurian-hero
+        span { max-width: 620px; min-width: 430px; margin: auto; display: block; padding-right:
+        21%;} .arthurian-hero h1 {  color: #000; font-family: ''Caudex'', sans-serif
+        ; margin: 0 0 15px 0; font-size: 5.5em ; padding: 0; line-height: 0.7em; font-weight:
+        400; letter-spacing: -3px; } .arthurian-hero h2 { font-family: ''Titillium
+        Web'', sans-serif !important; color: #943B3F; font-size: 1.8em; font-weight:
+        400; margin: 0 0 5px 0; text-transform: uppercase; letter-spacing: 5px; }
+        </style> <div class=''arthurian-hero herotext''> <div> <span> <h1>Rebuild</h1>
+        <h2>our City</h2> </span> </div></div> <video class=''arthurian-vid'' src=''https://s3.amazonaws.com/camelot-unchained/videos/patcher/arthurian.webm''
+        autoplay loop poster=\"https://s3.amazonaws.com/camelot-unchained/videos/patcher/arthurian.jpg\"></video>","id":"56ec6079a7b0a093c8bb1eb5","priority":9,"utcDateEnd":"2017-03-15T15:26:19Z","utcDateStart":"2016-03-15T15:26:19Z"},{"content":"<link
+        rel=\"stylesheet\" id=\"ss-blockquote-heading-font-css\" href=\"http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700\"
+        type=\"text/css\" media=\"all\"><link rel=\"stylesheet\" id=\"ss-main-heading-font-css\"
+        href=\"http://fonts.googleapis.com/css?family=Caudex:400,700\" type=\"text/css\"
+        media=\"all\"><style>  .valk-vid {position: fixed;top: 50%;left: 50%;min-width:
+        100%;min-height: 100%;width: auto;height: auto;transform: translateX(-50%)
+        translateY(-50%);background-size: cover;} .valk-hero {padding-left: 300px;     padding-top:
+        65px;     overflow: hidden;     text-align: center;} .valk-hero div{ position:
+        absolute; z-index: 1; top: 55%; width: calc(100% - 308px); } .valk-hero span
+        { max-width: 620px; min-width: 430px; margin: auto; display: block; padding-right:
+        21%;} .valk-hero h1 {  color: #fff; font-family: ''Caudex'', sans-serif ;
+        margin: 0 0 15px 0; font-size: 5.5em ; padding: 0; line-height: 0.7em; font-weight:
+        400; letter-spacing: -3px; } .valk-hero h2 { font-family: ''Titillium Web'',
+        sans-serif !important; color: #FFD985; font-size: 1.8em; font-weight: 400;
+        margin: 0 0 5px 0; text-transform: uppercase; letter-spacing: 5px; } </style>
+        <div class=''valk-hero herotext''> <div> <span> <h1>Vengeance  </h1> <h2>for
+        blood</h2> </span> </div></div> <video class=''valk-vid'' src=''videos/valk.webm''
+        autoplay loop poster=\"videos/valk.jpg\"></video>","id":"56f318cb30040e3d01b3242a","priority":10,"utcDateEnd":"2017-03-15T15:26:19Z","utcDateStart":"2016-03-15T15:26:19Z"}]'
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 15:44:28 GMT
+recorded_with: VCR 3.0.1

@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '471'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 15:47:37 GMT
+    body:
+      encoding: UTF-8
+      string: '[{"accessLevel":6,"channelID":4,"host":"wyrmlingprep.camelotunchained.com","name":"WyrmlingPrep","playerMaximum":1000,"shardID":1},{"accessLevel":6,"channelID":4,"host":"castle.camelotunchained.com","name":"Castle","playerMaximum":1492,"shardID":1},{"accessLevel":5,"channelID":4,"host":"hatchery.camelotunchained.com","name":"Hatchery","playerMaximum":1492,"shardID":1},{"accessLevel":6,"channelID":4,"host":"localhost","name":"localhost","playerMaximum":0,"shardID":0}]'
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 15:47:58 GMT
+recorded_with: VCR 3.0.1

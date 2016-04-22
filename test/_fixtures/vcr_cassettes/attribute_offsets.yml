@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/gamedata/attributeoffsets/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '3367'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 15:39:11 GMT
+    body:
+      encoding: UTF-8
+      string: '[{"race":16,"gender":1,"attributeOffsets":{"Strength":1.0,"Dexterity":0.0,"Agility":1.0,"Vitality":3.0,"Endurance":5.0,"Attunement":-4.0,"Will":-5.0,"Faith":2.0,"Resonance":-3.0,"Age":20.0,"Mass":100.0,"Eyesight":-5.0,"Hearing":-5.0,"Presence":5.0,"Clarity":5.0,"Affinity":0.0}},{"race":16,"gender":2,"attributeOffsets":{"Strength":1.0,"Dexterity":0.0,"Agility":1.0,"Vitality":3.0,"Endurance":5.0,"Attunement":-4.0,"Will":-5.0,"Faith":2.0,"Resonance":-3.0,"Age":20.0,"Mass":100.0,"Eyesight":-5.0,"Hearing":-5.0,"Presence":5.0,"Clarity":5.0,"Affinity":0.0}},{"race":18,"gender":1,"attributeOffsets":{"Strength":0.0,"Dexterity":2.0,"Agility":3.0,"Vitality":1.0,"Endurance":3.0,"Attunement":-5.0,"Will":-2.0,"Faith":2.0,"Resonance":-4.0,"Age":20.0,"Mass":100.0,"Eyesight":-5.0,"Hearing":-5.0,"Presence":5.0,"Clarity":5.0,"Affinity":0.0}},{"race":18,"gender":2,"attributeOffsets":{"Strength":0.0,"Dexterity":2.0,"Agility":3.0,"Vitality":1.0,"Endurance":3.0,"Attunement":-5.0,"Will":-2.0,"Faith":2.0,"Resonance":-4.0,"Age":20.0,"Mass":100.0,"Eyesight":-5.0,"Hearing":-5.0,"Presence":5.0,"Clarity":5.0,"Affinity":0.0}},{"race":17,"gender":1,"attributeOffsets":{"Strength":2.0,"Dexterity":-2.0,"Agility":-2.0,"Vitality":0.0,"Endurance":0.0,"Attunement":0.0,"Will":0.0,"Faith":2.0,"Resonance":0.0,"Age":20.0,"Mass":120.0,"Eyesight":10.0,"Hearing":-10.0,"Presence":-1.0,"Clarity":10.0,"Affinity":0.0}},{"race":17,"gender":2,"attributeOffsets":{"Strength":2.0,"Dexterity":-2.0,"Agility":-2.0,"Vitality":0.0,"Endurance":0.0,"Attunement":0.0,"Will":0.0,"Faith":2.0,"Resonance":0.0,"Age":20.0,"Mass":120.0,"Eyesight":10.0,"Hearing":-10.0,"Presence":-1.0,"Clarity":10.0,"Affinity":0.0}},{"race":2,"gender":1,"attributeOffsets":{"Strength":20.0,"Dexterity":45.0,"Agility":10.0,"Vitality":-10.0,"Endurance":0.0,"Attunement":0.0,"Will":5.0,"Faith":-10.0,"Resonance":0.0,"Age":20.0,"Mass":30.0,"Eyesight":20.0,"Hearing":10.0,"Presence":30.0,"Clarity":-10.0,"Affinity":-10.0}},{"race":2,"gender":2,"attributeOffsets":{"Strength":20.0,"Dexterity":45.0,"Agility":10.0,"Vitality":-10.0,"Endurance":0.0,"Attunement":0.0,"Will":5.0,"Faith":-10.0,"Resonance":0.0,"Age":20.0,"Mass":30.0,"Eyesight":20.0,"Hearing":10.0,"Presence":30.0,"Clarity":-10.0,"Affinity":-10.0}},{"race":15,"gender":1,"attributeOffsets":{"Strength":1.0,"Dexterity":0.0,"Agility":1.0,"Vitality":-2.0,"Endurance":-2.0,"Attunement":0.0,"Will":2.0,"Faith":0.0,"Resonance":0.0,"Age":20.0,"Mass":100.0,"Eyesight":5.0,"Hearing":-5.0,"Presence":10.0,"Clarity":5.0,"Affinity":-15.0}},{"race":15,"gender":2,"attributeOffsets":{"Strength":1.0,"Dexterity":0.0,"Agility":1.0,"Vitality":-2.0,"Endurance":-2.0,"Attunement":0.0,"Will":2.0,"Faith":0.0,"Resonance":0.0,"Age":20.0,"Mass":100.0,"Eyesight":5.0,"Hearing":-5.0,"Presence":10.0,"Clarity":5.0,"Affinity":-15.0}},{"race":4,"gender":1,"attributeOffsets":{"Strength":0.0,"Dexterity":-5.0,"Agility":0.0,"Vitality":-5.0,"Endurance":-5.0,"Attunement":5.0,"Will":0.0,"Faith":5.0,"Resonance":5.0,"Age":20.0,"Mass":100.0,"Eyesight":-10.0,"Hearing":-10.0,"Presence":10.0,"Clarity":40.0,"Affinity":-10.0}},{"race":4,"gender":2,"attributeOffsets":{"Strength":0.0,"Dexterity":-5.0,"Agility":0.0,"Vitality":-5.0,"Endurance":-5.0,"Attunement":5.0,"Will":0.0,"Faith":5.0,"Resonance":5.0,"Age":20.0,"Mass":100.0,"Eyesight":-10.0,"Hearing":-10.0,"Presence":10.0,"Clarity":40.0,"Affinity":-10.0}}]'
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 15:39:32 GMT
+recorded_with: VCR 3.0.1

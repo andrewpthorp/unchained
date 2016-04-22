@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/messageoftheday
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '89'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 15:42:06 GMT
+    body:
+      encoding: UTF-8
+      string: '{"id":"56ff1eeda7b0a02aa0e464cb","message":"Welcome to Camelot Unchained!","duration":30}'
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 15:42:27 GMT
+recorded_with: VCR 3.0.1
