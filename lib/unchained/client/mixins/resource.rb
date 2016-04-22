@@ -95,16 +95,16 @@ module Unchained
               # TODO: Better way to do this?
               case attr.type.to_s
               when Integer.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Fixnum) || (v.is_a?(NilClass) && attr.allow_nil?)
+                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Fixnum) || (v.nil? && attr.allow_nil?)
                 value = v.to_i
               when Float.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Float) || (v.is_a?(NilClass) && attr.allow_nil?)
+                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Float) || (v.nil? && attr.allow_nil?)
                 value = v.to_f
               when String.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(String) || (v.is_a?(NilClass) && attr.allow_nil?)
+                raise_invalid_value!(attr.type, k, v) unless v.is_a?(String) || (v.nil? && attr.allow_nil?)
                 value = v
               when Hash.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Hash) || (v.is_a?(NilClass) && attr.allow_nil?)
+                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Hash) || (v.nil? && attr.allow_nil?)
                 value = v
               end
 
@@ -121,6 +121,7 @@ module Unchained
               "Expected #{expected}, got #{value.class}. `#{key}` (#{value})."
             )
           end
+
         end
       end
     end
