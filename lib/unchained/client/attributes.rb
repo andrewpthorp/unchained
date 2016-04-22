@@ -14,8 +14,20 @@ module Unchained
         attribute :units, String
       end
 
+      class AttributeOffset
+        include Unchained::Client::Mixins::Resource
+
+        attribute :race, Integer
+        attribute :gender, Integer
+        attribute :offsets, Hash, json: 'attributeOffsets'
+      end
+
       def attributes(shard, opts={})
         get_resources("#{base_url}/gamedata/attributes/#{shard}", AttributeInfo, opts)
+      end
+
+      def attribute_offsets(shard, opts={})
+        get_resources("#{base_url}/gamedata/attributeoffsets/#{shard}", AttributeOffset, opts)
       end
 
     end

@@ -103,6 +103,9 @@ module Unchained
               when String.to_s
                 raise_invalid_value!(attr.type, k, v) unless v.is_a?(String) || (v.is_a?(NilClass) && attr.allow_nil?)
                 value = v
+              when Hash.to_s
+                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Hash) || (v.is_a?(NilClass) && attr.allow_nil?)
+                value = v
               end
 
               res.send("#{attr.name}=", value)
