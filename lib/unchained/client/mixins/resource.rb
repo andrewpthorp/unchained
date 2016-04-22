@@ -88,7 +88,7 @@ module Unchained
           # instance.
           #
           # Returns an instance of the class that uses this mixin.
-          def from_json(json)
+          def from_json(json, client: nil)
             res = self.new
 
             json.each do |k, v|
@@ -116,7 +116,7 @@ module Unchained
 
               # Lurk, there is probably a better way to do this.
               if !attr.expand_method.nil?
-                client = Unchained::Client.new
+                client ||= Unchained::Client.new
                 value = client.send(attr.expand_method, value)
               end
 

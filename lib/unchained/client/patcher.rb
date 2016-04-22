@@ -22,11 +22,19 @@ module Unchained
       end
 
       def patcher_hero_contents(opts={})
-        get_resources("#{base_url}/patcherherocontent", HeroContent, opts)
+        @cache[:patcher_hero_contents] ||= get_resources(
+          "#{base_url}/patcherherocontent",
+          HeroContent,
+          opts,
+        )
       end
 
       def patcher_alerts(opts={})
-        get_resources("#{base_url}/patcheralerts", Alert, opts)
+        @cache[:patcher_alerts] ||= get_resources(
+          "#{base_url}/patcheralerts",
+          Alert,
+          opts,
+        )
       end
 
     end

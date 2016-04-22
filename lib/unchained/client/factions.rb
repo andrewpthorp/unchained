@@ -12,7 +12,11 @@ module Unchained
       end
 
       def factions(opts={})
-        get_resources("#{base_url}/gamedata/factions", Faction, opts)
+        @cache[:factions] ||= get_resources(
+          "#{base_url}/gamedata/factions",
+          Faction,
+          opts,
+        )
       end
 
       def faction(id, opts={})

@@ -12,7 +12,11 @@ module Unchained
       end
 
       def races(opts={})
-        get_resources("#{base_url}/gamedata/races", Race, opts)
+        @cache[:races] ||= get_resources(
+          "#{base_url}/gamedata/races",
+          Race,
+          opts,
+        )
       end
 
       def race(id, opts={})

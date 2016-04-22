@@ -14,8 +14,11 @@ require_relative 'client/servers'
 module Unchained
   class Client
     attr_accessor(*Unchained::Configuration::KEYS)
+    attr_reader :cache
 
     def initialize(opts={})
+      @cache = {}
+
       config = Unchained.configuration.merge(opts)
       Unchained::Configuration::KEYS.each do |key|
         send("#{key}=", config[key])
@@ -24,6 +27,11 @@ module Unchained
 
     def base_url
       'http://api.camelotunchained.com/v1'
+    end
+
+    # Helper method to bust the cache.
+    def clear_cache!
+      @cache = {}
     end
 
     include Unchained::Request

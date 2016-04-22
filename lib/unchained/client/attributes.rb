@@ -23,11 +23,19 @@ module Unchained
       end
 
       def attributes(shard, opts={})
-        get_resources("#{base_url}/gamedata/attributes/#{shard}", AttributeInfo, opts)
+        @cache[:attributes] ||= get_resources(
+          "#{base_url}/gamedata/attributes/#{shard}",
+          AttributeInfo,
+          opts,
+        )
       end
 
       def attribute_offsets(shard, opts={})
-        get_resources("#{base_url}/gamedata/attributeoffsets/#{shard}", AttributeOffset, opts)
+        @cache[:attribute_offsets] ||= get_resources(
+          "#{base_url}/gamedata/attributeoffsets/#{shard}",
+          AttributeOffset,
+          opts,
+        )
       end
 
     end

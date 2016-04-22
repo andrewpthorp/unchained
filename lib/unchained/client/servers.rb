@@ -15,8 +15,15 @@ module Unchained
 
       def servers(opts={}, channel: nil)
         url = "#{base_url}/servers"
-        url += "/#{channel}" unless channel.nil?
-        get_resources(url, Server, opts)
+
+        if channel.nil?
+          key = :channels
+        else
+          key = :"channels_#{channel}"
+          url += "/#{channel}"
+        end
+
+        @cache[key] ||= get_resources(url, Server, opts)
       end
 
       def server(id, opts={}, channel: nil)

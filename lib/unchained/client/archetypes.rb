@@ -12,7 +12,11 @@ module Unchained
       end
 
       def archetypes(opts={})
-        get_resources("#{base_url}/gamedata/archetypes", Archetype, opts)
+        @cache[:archetypes] ||= get_resources(
+          "#{base_url}/gamedata/archetypes",
+          Archetype,
+          opts,
+        )
       end
 
       def archetype(id, opts={})
