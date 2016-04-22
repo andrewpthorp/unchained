@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = 'andrewpthorp@gmail.com'
   s.homepage    = 'http://github.com/andrewpthorp/unchained'
 
-  s.license = 'MIT'
+  s.licenses    = ['MIT']
   s.summary     = "Client library for Camelot Unchained API."
   s.description = <<-DESC
     A gem that lets you call into the Camelot Unchained API. You can see the API
