@@ -26,5 +26,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rake', '~> 11.0'
   s.add_development_dependency 'minitest', '~> 5.8'
+  s.add_dependency 'pry', '~> 0.10'
   s.add_dependency 'rest-client', '~> 1.8'
 end

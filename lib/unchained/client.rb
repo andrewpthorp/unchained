@@ -1,5 +1,9 @@
 require_relative 'configuration'
+require_relative 'client/resource'
 require_relative 'client/request'
+
+# RESOURCES
+require_relative 'client/archetypes'
 require_relative 'client/servers'
 
 module Unchained
@@ -18,6 +22,9 @@ module Unchained
     end
 
     include Unchained::Client::Request
+
+    # RESOURCES
+    include Unchained::Client::Archetypes
     include Unchained::Client::Servers
   end
 end
