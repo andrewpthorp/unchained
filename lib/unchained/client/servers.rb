@@ -4,14 +4,13 @@ module Unchained
 
       class Server
         include Unchained::Client::Mixins::Resource
-        resource({
-          :access_level => 'accessLevel',
-          :channel_id => 'channelID',
-          :host => 'host',
-          :name => 'name',
-          :player_maximum => 'playerMaximum',
-          :shard_id => 'shardID',
-        })
+
+        attribute :access_level, Integer, json: 'accessLevel'
+        attribute :channel_id, Integer, json: 'channelID'
+        attribute :host, String
+        attribute :name, String
+        attribute :player_maximum, Integer, json: 'playerMaximum'
+        attribute :shard_id, Integer, json: 'shardID'
       end
 
       def servers(opts={})

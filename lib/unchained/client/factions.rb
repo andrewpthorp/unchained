@@ -4,12 +4,11 @@ module Unchained
 
       class Faction
         include Unchained::Client::Mixins::Resource
-        resource({
-          :description => 'description',
-          :id => 'id',
-          :name => 'name',
-          :short_name => 'shortName',
-        })
+
+        attribute :description, String
+        attribute :id, Integer
+        attribute :name, String
+        attribute :short_name, String, json: 'shortName'
       end
 
       def factions(opts={})

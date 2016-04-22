@@ -4,12 +4,11 @@ module Unchained
 
       class Race
         include Unchained::Client::Mixins::Resource
-        resource({
-          :description => 'description',
-          :faction => 'faction',
-          :id => 'id',
-          :name => 'name',
-        })
+
+        attribute :description, String
+        attribute :faction, Integer
+        attribute :id, Integer
+        attribute :name, String
       end
 
       def races(opts={})

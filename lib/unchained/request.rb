@@ -18,7 +18,7 @@ module Unchained
 
     def get_resources(url, resource_class, params={})
       get(url, params).map do |result|
-        resource_class.decode_result(result)
+        resource_class.from_json(result)
       end
     end
 

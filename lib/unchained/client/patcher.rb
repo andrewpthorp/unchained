@@ -4,23 +4,21 @@ module Unchained
 
       class HeroContent
         include Unchained::Client::Mixins::Resource
-        resource({
-          :id => 'id',
-          :content => 'content',
-          :priority => 'priority',
-          :start => 'utcDateStart',
-          :end => 'utcDateEnd',
-        })
+
+        attribute :id, String
+        attribute :content, String
+        attribute :priority, Integer
+        attribute :start, String, json: 'utcDateStart'
+        attribute :end, String, json: 'utcDateEnd'
       end
 
       class Alert
         include Unchained::Client::Mixins::Resource
-        resource({
-          :id => 'id',
-          :message => 'message',
-          :start => 'utcDateStart',
-          :end => 'utcDateEnd',
-        })
+
+        attribute :id, Integer
+        attribute :message, String
+        attribute :start, String, json: 'utcDateStart'
+        attribute :end, String, json: 'utcDateEnd'
       end
 
       def patcher_hero_contents(opts={})
