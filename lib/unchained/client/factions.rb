@@ -15,6 +15,10 @@ module Unchained
         get_resources("#{base_url}/gamedata/factions", Faction, opts)
       end
 
+      def faction(id, opts={})
+        factions(opts).find {|f| f.id == id}
+      end
+
     end
   end
 end

@@ -17,7 +17,7 @@ module Unchained
       class AttributeOffset
         include Unchained::Client::Mixins::Resource
 
-        attribute :race, Integer
+        attribute :race, Integer, expand: :race
         attribute :gender, Integer
         attribute :offsets, Hash, json: 'attributeOffsets'
       end

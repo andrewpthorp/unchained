@@ -13,6 +13,7 @@ module Unchained
       #     attribute :id, String
       #     attribute :name, String
       #     attribute :members, Integer, json: 'numberOfMembers'
+      #     attribute :faction, Integer, expand: :faction
       #   end
       #
 
@@ -47,6 +48,11 @@ module Unchained
           # Whether or not to allow nil, defaults to false.
           def allow_nil?
             @opts.fetch(:allow_nil, false)
+          end
+
+          # Some of the attributes can be expanded.
+          def expand_method
+            @opts.fetch(:expand, nil)
           end
         end
 
@@ -106,6 +112,12 @@ module Unchained
               when Hash.to_s
                 maybe_raise_invalid_value(attr, k, v) unless v.is_a?(Hash)
                 value = v
+              end
+
+              # Lurk, there is probably a better way to do this.
+              if !attr.expand_method.nil?
+                client = Unchained::Client.new
+                value = client.send(attr.expand_method, value)
               end
 
               res.send("#{attr.name}=", value)

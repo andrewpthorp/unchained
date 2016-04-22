@@ -19,6 +19,10 @@ module Unchained
         get_resources(url, Server, opts)
       end
 
+      def server(id, opts={}, channel: nil)
+        servers(opts, channel).find {|s| s.id == id}
+      end
+
     end
   end
 end
