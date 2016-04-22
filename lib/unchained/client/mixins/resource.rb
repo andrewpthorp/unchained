@@ -43,6 +43,11 @@ module Unchained
           def json_field
             @opts.fetch(:json, @name.to_s)
           end
+
+          # Whether or not to allow nil, defaults to false.
+          def allow_nil?
+            @opts.fetch(:allow_nil, false)
+          end
         end
 
         def self.included(base)
@@ -90,13 +95,13 @@ module Unchained
               # TODO: Better way to do this?
               case attr.type.to_s
               when Integer.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Fixnum)
+                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Fixnum) || (v.is_a?(NilClass) && attr.allow_nil?)
                 value = v.to_i
               when Float.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Float)
+                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Float) || (v.is_a?(NilClass) && attr.allow_nil?)
                 value = v.to_f
               when String.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(String)
+                raise_invalid_value!(attr.type, k, v) unless v.is_a?(String) || (v.is_a?(NilClass) && attr.allow_nil?)
                 value = v
               end
 

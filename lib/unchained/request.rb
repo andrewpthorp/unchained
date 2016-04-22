@@ -16,6 +16,10 @@ module Unchained
       end
     end
 
+    def get_resource(url, resource_class, params={})
+      resource_class.from_json(get(url, params))
+    end
+
     def get_resources(url, resource_class, params={})
       get(url, params).map do |result|
         resource_class.from_json(result)
