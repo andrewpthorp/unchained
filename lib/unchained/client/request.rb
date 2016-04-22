@@ -9,9 +9,17 @@ module Unchained
           case resp.code
           when 200
             JSON.parse(resp)
+          when 404
+            raise Unchained::NotFound.new(res.message)
           else
             resp.return!(req, res, &block)
           end
+        end
+      end
+
+      def get_resources(url, resource_class, params={})
+        get(url, params).map do |result|
+          resource_class.decode_result(result)
         end
       end
 

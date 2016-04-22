@@ -1,8 +1,8 @@
 module Unchained
   class Client
-    module Archetypes
+    module Races
 
-      class Archetype
+      class Race
         include Unchained::Client::Resource
         resource({
           :description => 'description',
@@ -12,8 +12,8 @@ module Unchained
         })
       end
 
-      def archetypes(opts={})
-        get_resources("#{base_url}/gamedata/archetypes", Archetype, opts)
+      def races(opts={})
+        get_resources("#{base_url}/gamedata/races", Race, opts)
       end
 
     end

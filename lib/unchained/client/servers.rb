@@ -15,9 +15,7 @@ module Unchained
       end
 
       def servers(opts={})
-        get("#{base_url}/servers", opts).map do |server|
-          Server.decode_result(server)
-        end
+        get_resources("#{base_url}/servers", Server, opts)
       end
 
     end

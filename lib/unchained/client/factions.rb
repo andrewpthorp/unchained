@@ -1,19 +1,19 @@
 module Unchained
   class Client
-    module Archetypes
+    module Factions
 
-      class Archetype
+      class Faction
         include Unchained::Client::Resource
         resource({
           :description => 'description',
-          :faction => 'faction',
           :id => 'id',
           :name => 'name',
+          :short_name => 'shortName',
         })
       end
 
-      def archetypes(opts={})
-        get_resources("#{base_url}/gamedata/archetypes", Archetype, opts)
+      def factions(opts={})
+        get_resources("#{base_url}/gamedata/factions", Faction, opts)
       end
 
     end
