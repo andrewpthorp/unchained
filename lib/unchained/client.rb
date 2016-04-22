@@ -4,6 +4,7 @@ require_relative 'request'
 # RESOURCES
 require_relative 'client/mixins/resource'
 require_relative 'client/archetypes'
+require_relative 'client/attributes'
 require_relative 'client/factions'
 require_relative 'client/races'
 require_relative 'client/patcher'
@@ -28,6 +29,7 @@ module Unchained
 
     # RESOURCES
     include Unchained::Client::Archetypes
+    include Unchained::Client::Attributes
     include Unchained::Client::Factions
     include Unchained::Client::Races
     include Unchained::Client::Patcher

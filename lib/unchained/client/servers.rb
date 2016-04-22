@@ -13,8 +13,10 @@ module Unchained
         attribute :shard_id, Integer, json: 'shardID'
       end
 
-      def servers(opts={})
-        get_resources("#{base_url}/servers", Server, opts)
+      def servers(opts={}, channel: nil)
+        url = "#{base_url}/servers"
+        url += "/#{channel}" unless channel.nil?
+        get_resources(url, Server, opts)
       end
 
     end
