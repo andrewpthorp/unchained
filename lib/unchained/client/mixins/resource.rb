@@ -87,7 +87,7 @@ module Unchained
 
             json.each do |k, v|
               # TODO: Better way to do this?
-              attr = @attributes.find{|a| a.json_field == k}
+              attr = @attributes.find{|a| a.json_field == k.to_s}
               raise InvalidAttribute.new(
                 "`#{self.name.split('::').last}` did not define a `#{k}`."
               ) if attr.nil?
@@ -95,16 +95,16 @@ module Unchained
               # TODO: Better way to do this?
               case attr.type.to_s
               when Integer.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Fixnum) || (v.nil? && attr.allow_nil?)
+                maybe_raise_invalid_value(attr, k, v) unless v.is_a?(Fixnum)
                 value = v.to_i
               when Float.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Float) || (v.nil? && attr.allow_nil?)
+                maybe_raise_invalid_value(attr, k, v) unless v.is_a?(Float)
                 value = v.to_f
               when String.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(String) || (v.nil? && attr.allow_nil?)
+                maybe_raise_invalid_value(attr, k, v) unless v.is_a?(String)
                 value = v
               when Hash.to_s
-                raise_invalid_value!(attr.type, k, v) unless v.is_a?(Hash) || (v.nil? && attr.allow_nil?)
+                maybe_raise_invalid_value(attr, k, v) unless v.is_a?(Hash)
                 value = v
               end
 
@@ -116,9 +116,17 @@ module Unchained
 
           private
 
-          def raise_invalid_value!(expected, key, value)
+          def maybe_raise_invalid_value(attribute, key, value)
+            if value.nil?
+              return if attribute.allow_nil?
+
+              raise InvalidValue.new(
+                "`#{attribute.name}` is not allowed to be nil.",
+              )
+            end
+
             raise InvalidValue.new(
-              "Expected #{expected}, got #{value.class}. `#{key}` (#{value})."
+              "Expected #{attribute.type}, got #{value.class}. `#{key}` (#{value})."
             )
           end
 
