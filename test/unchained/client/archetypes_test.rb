@@ -14,9 +14,15 @@ describe Unchained::Client::Archetypes do
 
         archetype = archetypes.first
         assert_equal('The Dark Knight', archetype.description)
-        assert_equal(3, archetype.faction)
         assert_equal(7, archetype.id)
         assert_equal('Black Knight', archetype.name)
+
+        # check that it expands the faction
+        faction = archetype.faction
+        assert_equal('The Arthurians', faction.description)
+        assert_equal(3, faction.id)
+        assert_equal('Arthurians', faction.name)
+        assert_equal('Arthurian', faction.short_name)
       end
     end
   end

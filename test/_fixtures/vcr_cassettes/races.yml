@@ -27,12 +27,264 @@ http_interactions:
       Server:
       - Microsoft-HTTPAPI/2.0
       Date:
-      - Fri, 22 Apr 2016 15:47:10 GMT
+      - Fri, 22 Apr 2016 23:09:31 GMT
     body:
       encoding: UTF-8
       string: '[{"name":"Luchorpan","description":"Luchorpan","faction":1,"id":2},{"name":"Valkyrie","description":"Valkyrie","faction":2,"id":4},{"name":"Human","description":"Viking
         Human","faction":2,"id":15},{"name":"Human","description":"Arthurian Human","faction":3,"id":16},{"name":"Human","description":"TDD
         Human","faction":1,"id":17},{"name":"Pict","description":"Pictish?","faction":3,"id":18}]'
     http_version: 
-  recorded_at: Fri, 22 Apr 2016 15:47:31 GMT
+  recorded_at: Fri, 22 Apr 2016 23:09:53 GMT
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/gamedata/factions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '362'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 23:09:32 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siZGVzY3JpcHRpb24iOiJObyBGYWN0aW9uIG9yIEFsbCBGYWN0aW9ucyAo
+        TlBDIE9ubHkpIiwiaWQiOjAsIm5hbWUiOiJGYWN0aW9ubGVzcyIsInNob3J0
+        TmFtZSI6IkZhY3Rpb25sZXNzIn0seyJkZXNjcmlwdGlvbiI6IlRoZSBUdWF0
+        aGEgRMOpIERhbmFubiIsImlkIjoxLCJuYW1lIjoiVHVhdGhhIETDqSBEYW5h
+        bm4iLCJzaG9ydE5hbWUiOiJUREQifSx7ImRlc2NyaXB0aW9uIjoiVGhlIFZp
+        a2luZ3MiLCJpZCI6MiwibmFtZSI6IlZpa2luZ3MiLCJzaG9ydE5hbWUiOiJW
+        aWtpbmcifSx7ImRlc2NyaXB0aW9uIjoiVGhlIEFydGh1cmlhbnMiLCJpZCI6
+        MywibmFtZSI6IkFydGh1cmlhbnMiLCJzaG9ydE5hbWUiOiJBcnRodXJpYW4i
+        fV0=
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 23:09:53 GMT
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/gamedata/factions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '362'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 23:09:32 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siZGVzY3JpcHRpb24iOiJObyBGYWN0aW9uIG9yIEFsbCBGYWN0aW9ucyAo
+        TlBDIE9ubHkpIiwiaWQiOjAsIm5hbWUiOiJGYWN0aW9ubGVzcyIsInNob3J0
+        TmFtZSI6IkZhY3Rpb25sZXNzIn0seyJkZXNjcmlwdGlvbiI6IlRoZSBUdWF0
+        aGEgRMOpIERhbmFubiIsImlkIjoxLCJuYW1lIjoiVHVhdGhhIETDqSBEYW5h
+        bm4iLCJzaG9ydE5hbWUiOiJUREQifSx7ImRlc2NyaXB0aW9uIjoiVGhlIFZp
+        a2luZ3MiLCJpZCI6MiwibmFtZSI6IlZpa2luZ3MiLCJzaG9ydE5hbWUiOiJW
+        aWtpbmcifSx7ImRlc2NyaXB0aW9uIjoiVGhlIEFydGh1cmlhbnMiLCJpZCI6
+        MywibmFtZSI6IkFydGh1cmlhbnMiLCJzaG9ydE5hbWUiOiJBcnRodXJpYW4i
+        fV0=
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 23:09:53 GMT
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/gamedata/factions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '362'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 23:09:32 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siZGVzY3JpcHRpb24iOiJObyBGYWN0aW9uIG9yIEFsbCBGYWN0aW9ucyAo
+        TlBDIE9ubHkpIiwiaWQiOjAsIm5hbWUiOiJGYWN0aW9ubGVzcyIsInNob3J0
+        TmFtZSI6IkZhY3Rpb25sZXNzIn0seyJkZXNjcmlwdGlvbiI6IlRoZSBUdWF0
+        aGEgRMOpIERhbmFubiIsImlkIjoxLCJuYW1lIjoiVHVhdGhhIETDqSBEYW5h
+        bm4iLCJzaG9ydE5hbWUiOiJUREQifSx7ImRlc2NyaXB0aW9uIjoiVGhlIFZp
+        a2luZ3MiLCJpZCI6MiwibmFtZSI6IlZpa2luZ3MiLCJzaG9ydE5hbWUiOiJW
+        aWtpbmcifSx7ImRlc2NyaXB0aW9uIjoiVGhlIEFydGh1cmlhbnMiLCJpZCI6
+        MywibmFtZSI6IkFydGh1cmlhbnMiLCJzaG9ydE5hbWUiOiJBcnRodXJpYW4i
+        fV0=
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 23:09:54 GMT
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/gamedata/factions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '362'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 23:09:32 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siZGVzY3JpcHRpb24iOiJObyBGYWN0aW9uIG9yIEFsbCBGYWN0aW9ucyAo
+        TlBDIE9ubHkpIiwiaWQiOjAsIm5hbWUiOiJGYWN0aW9ubGVzcyIsInNob3J0
+        TmFtZSI6IkZhY3Rpb25sZXNzIn0seyJkZXNjcmlwdGlvbiI6IlRoZSBUdWF0
+        aGEgRMOpIERhbmFubiIsImlkIjoxLCJuYW1lIjoiVHVhdGhhIETDqSBEYW5h
+        bm4iLCJzaG9ydE5hbWUiOiJUREQifSx7ImRlc2NyaXB0aW9uIjoiVGhlIFZp
+        a2luZ3MiLCJpZCI6MiwibmFtZSI6IlZpa2luZ3MiLCJzaG9ydE5hbWUiOiJW
+        aWtpbmcifSx7ImRlc2NyaXB0aW9uIjoiVGhlIEFydGh1cmlhbnMiLCJpZCI6
+        MywibmFtZSI6IkFydGh1cmlhbnMiLCJzaG9ydE5hbWUiOiJBcnRodXJpYW4i
+        fV0=
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 23:09:54 GMT
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/gamedata/factions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '362'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 23:09:32 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siZGVzY3JpcHRpb24iOiJObyBGYWN0aW9uIG9yIEFsbCBGYWN0aW9ucyAo
+        TlBDIE9ubHkpIiwiaWQiOjAsIm5hbWUiOiJGYWN0aW9ubGVzcyIsInNob3J0
+        TmFtZSI6IkZhY3Rpb25sZXNzIn0seyJkZXNjcmlwdGlvbiI6IlRoZSBUdWF0
+        aGEgRMOpIERhbmFubiIsImlkIjoxLCJuYW1lIjoiVHVhdGhhIETDqSBEYW5h
+        bm4iLCJzaG9ydE5hbWUiOiJUREQifSx7ImRlc2NyaXB0aW9uIjoiVGhlIFZp
+        a2luZ3MiLCJpZCI6MiwibmFtZSI6IlZpa2luZ3MiLCJzaG9ydE5hbWUiOiJW
+        aWtpbmcifSx7ImRlc2NyaXB0aW9uIjoiVGhlIEFydGh1cmlhbnMiLCJpZCI6
+        MywibmFtZSI6IkFydGh1cmlhbnMiLCJzaG9ydE5hbWUiOiJBcnRodXJpYW4i
+        fV0=
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 23:09:54 GMT
+- request:
+    method: get
+    uri: http://api.camelotunchained.com/v1/gamedata/factions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Logintoken:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '362'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 22 Apr 2016 23:09:32 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siZGVzY3JpcHRpb24iOiJObyBGYWN0aW9uIG9yIEFsbCBGYWN0aW9ucyAo
+        TlBDIE9ubHkpIiwiaWQiOjAsIm5hbWUiOiJGYWN0aW9ubGVzcyIsInNob3J0
+        TmFtZSI6IkZhY3Rpb25sZXNzIn0seyJkZXNjcmlwdGlvbiI6IlRoZSBUdWF0
+        aGEgRMOpIERhbmFubiIsImlkIjoxLCJuYW1lIjoiVHVhdGhhIETDqSBEYW5h
+        bm4iLCJzaG9ydE5hbWUiOiJUREQifSx7ImRlc2NyaXB0aW9uIjoiVGhlIFZp
+        a2luZ3MiLCJpZCI6MiwibmFtZSI6IlZpa2luZ3MiLCJzaG9ydE5hbWUiOiJW
+        aWtpbmcifSx7ImRlc2NyaXB0aW9uIjoiVGhlIEFydGh1cmlhbnMiLCJpZCI6
+        MywibmFtZSI6IkFydGh1cmlhbnMiLCJzaG9ydE5hbWUiOiJBcnRodXJpYW4i
+        fV0=
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 23:09:54 GMT
 recorded_with: VCR 3.0.1
