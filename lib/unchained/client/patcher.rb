@@ -3,7 +3,7 @@ module Unchained
     module Patcher
 
       class HeroContent
-        include Unchained::Client::Resource
+        include Unchained::Client::Mixins::Resource
         resource({
           :id => 'id',
           :content => 'content',
@@ -14,7 +14,7 @@ module Unchained
       end
 
       class Alert
-        include Unchained::Client::Resource
+        include Unchained::Client::Mixins::Resource
         resource({
           :id => 'id',
           :message => 'message',

@@ -3,7 +3,7 @@ module Unchained
     module Factions
 
       class Faction
-        include Unchained::Client::Resource
+        include Unchained::Client::Mixins::Resource
         resource({
           :description => 'description',
           :id => 'id',

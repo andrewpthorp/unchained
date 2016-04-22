@@ -3,7 +3,7 @@ module Unchained
     module Servers
 
       class Server
-        include Unchained::Client::Resource
+        include Unchained::Client::Mixins::Resource
         resource({
           :access_level => 'accessLevel',
           :channel_id => 'channelID',

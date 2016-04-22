@@ -3,7 +3,7 @@ module Unchained
     module Archetypes
 
       class Archetype
-        include Unchained::Client::Resource
+        include Unchained::Client::Mixins::Resource
         resource({
           :description => 'description',
           :faction => 'faction',

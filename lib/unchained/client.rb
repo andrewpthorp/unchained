@@ -1,8 +1,8 @@
 require_relative 'configuration'
-require_relative 'client/resource'
-require_relative 'client/request'
+require_relative 'request'
 
 # RESOURCES
+require_relative 'client/mixins/resource'
 require_relative 'client/archetypes'
 require_relative 'client/factions'
 require_relative 'client/races'
@@ -24,7 +24,7 @@ module Unchained
       'http://api.camelotunchained.com/v1'
     end
 
-    include Unchained::Client::Request
+    include Unchained::Request
 
     # RESOURCES
     include Unchained::Client::Archetypes

@@ -3,7 +3,7 @@ module Unchained
     module Races
 
       class Race
-        include Unchained::Client::Resource
+        include Unchained::Client::Mixins::Resource
         resource({
           :description => 'description',
           :faction => 'faction',
