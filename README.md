@@ -29,7 +29,6 @@ Unchained API:
 
 ### TODO
 
-- Tests
 - Implement `loginToken` endpoints
 
 ### License
