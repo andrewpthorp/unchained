@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+version="$(gem build unchained.gemspec | grep Version: | awk '{print $2}')"
+
+if [ -z "$version" ]; then
+  echo "Could not find a version, no release being cut."
+  exit 1
+fi
+
+echo "Releasing Version $version"
+git commit --allow-empty -am "Release $version"
+git tag "v$version"
+git push origin
+git push origin "v$version"
+gem push "unchained-$version.gem"
