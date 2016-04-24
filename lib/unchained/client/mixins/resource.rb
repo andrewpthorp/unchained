@@ -88,7 +88,7 @@ module Unchained
           # instance.
           #
           # Returns an instance of the class that uses this mixin.
-          def from_json(json, client: nil)
+          def from_hash(json, client: nil)
             res = self.new
 
             json.each do |k, v|

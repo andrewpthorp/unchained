@@ -40,24 +40,24 @@ describe 'Resource Mixin' do
 
   describe 'nil attributes' do
     it 'should allow nil values' do
-      resource = SampleResource.from_json(company: nil)
+      resource = SampleResource.from_hash(company: nil)
       assert_nil(resource.company, 'Expected `company` to be nil')
     end
 
     it 'should parse non-nil values correctly' do
-      resource = SampleResource.from_json(company: 'CSE')
+      resource = SampleResource.from_hash(company: 'CSE')
       assert_equal('CSE', resource.company, 'Expected `company` to be set.')
     end
 
     it 'should allow you to disable nil explicitly' do
       assert_raises(Unchained::InvalidValue) do
-        SampleResource.from_json(name: nil)
+        SampleResource.from_hash(name: nil)
       end
     end
 
     it 'should default to not allow nil' do
       assert_raises(Unchained::InvalidValue) do
-        SampleResource.from_json(someField: nil)
+        SampleResource.from_hash(someField: nil)
       end
     end
   end
