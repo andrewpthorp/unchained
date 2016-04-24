@@ -8,7 +8,7 @@ module Unchained
         attribute :base_value, Float, json: 'baseValue'
         attribute :derived_from, String, json: 'derivedFrom'
         attribute :description, String
-        attribute :max_or_multipler, Float, json: 'maxOrMultipler'
+        attribute :max_or_multiplier, Float, json: 'maxOrMultipler'
         attribute :name, String
         attribute :type, Integer
         attribute :units, String

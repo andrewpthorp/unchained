@@ -11,6 +11,14 @@ describe Unchained::Client::Servers do
       VCR.use_cassette('servers') do
         servers = @client.servers
         assert_equal(4, servers.count)
+
+        server = servers.first
+        assert_equal(6, server.access_level)
+        assert_equal(4, server.channel_id)
+        assert_equal('wyrmlingprep.camelotunchained.com', server.host)
+        assert_equal('WyrmlingPrep', server.name)
+        assert_equal(1000, server.player_maximum)
+        assert_equal(1, server.shard_id)
       end
     end
   end
