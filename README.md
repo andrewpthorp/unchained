@@ -1,6 +1,6 @@
 ### Unchained 
 
-![Build Status](https://travis-ci.org/andrewpthorp/unchained.svg?branch=master) [![Code Climate](https://codeclimate.com/github/andrewpthorp/unchained/badges/gpa.svg)](https://codeclimate.com/github/andrewpthorp/unchained)
+[![Build Status](https://travis-ci.org/andrewpthorp/unchained.svg?branch=master)](https://travis-ci.org/andrewpthorp/unchained) [![Code Climate](https://codeclimate.com/github/andrewpthorp/unchained/badges/gpa.svg)](https://codeclimate.com/github/andrewpthorp/unchained)
 
 A ruby client library for the Camelot Unchained API.
 
