@@ -3,8 +3,9 @@ rvm:
   - 2.2
   - 2.1
   - 2.0
-  - jruby
   - rbx-2
+
+sudo: false
 
 bundler_args: --without development
 
