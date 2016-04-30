@@ -1,4 +1,4 @@
-### Unchained
+### Unchained ![Build Status](https://travis-ci.org/andrewpthorp/unchained.svg?branch=master)
 
 A ruby client library for the Camelot Unchained API.
 
