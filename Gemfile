@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 group :development do
   gem 'pry', '~> 0.10'
-  gem 'rake', '~> 11.0'
 end
 
 group :test do
@@ -10,6 +9,10 @@ group :test do
   gem 'vcr', '~> 3.0'
   gem 'minitest', '~> 5.8'
   gem 'minitest-reporters', '~> 1.1'
+end
+
+group :development, :test do
+  gem 'rake', '~> 11.0'
 end
 
 gemspec
