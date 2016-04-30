@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - Microsoft-HTTPAPI/2.0
       Date:
-      - Fri, 22 Apr 2016 15:39:11 GMT
+      - Sat, 30 Apr 2016 20:28:37 GMT
     body:
       encoding: UTF-8
       string: '[{"baseValue":30.0,"derivedFrom":"None","description":"Increases the
@@ -96,5 +96,5 @@ http_interactions:
         cold.","maxOrMultipler":0.25,"name":"Cold Tolerance","type":3,"units":"degrees
         Celsius"}]'
     http_version: 
-  recorded_at: Fri, 22 Apr 2016 15:39:33 GMT
+  recorded_at: Sat, 30 Apr 2016 20:28:41 GMT
 recorded_with: VCR 3.0.1

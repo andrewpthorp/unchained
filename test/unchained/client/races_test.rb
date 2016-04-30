@@ -12,7 +12,9 @@ describe Unchained::Client::Races do
         races = @client.races
         assert_equal(6, races.count)
 
-        race = races.first
+        race = races.find{|f| f.id == 2}
+        assert(race, "Expected to find a race with an `id` of 2.")
+
         assert(
           race.is_a?(Unchained::Client::Races::Race),
           'Expected `races` to return Races,',

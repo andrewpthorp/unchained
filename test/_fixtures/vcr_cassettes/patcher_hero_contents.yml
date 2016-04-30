@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - Microsoft-HTTPAPI/2.0
       Date:
-      - Fri, 22 Apr 2016 15:44:07 GMT
+      - Sat, 30 Apr 2016 20:28:39 GMT
     body:
       encoding: UTF-8
       string: '[{"content":"<link rel=\"stylesheet\" id=\"ss-blockquote-heading-font-css\"
@@ -100,5 +100,5 @@ http_interactions:
         blood</h2> </span> </div></div> <video class=''valk-vid'' src=''videos/valk.webm''
         autoplay loop poster=\"videos/valk.jpg\"></video>","id":"56f318cb30040e3d01b3242a","priority":10,"utcDateEnd":"2017-03-15T15:26:19Z","utcDateStart":"2016-03-15T15:26:19Z"}]'
     http_version: 
-  recorded_at: Fri, 22 Apr 2016 15:44:28 GMT
+  recorded_at: Sat, 30 Apr 2016 20:28:42 GMT
 recorded_with: VCR 3.0.1

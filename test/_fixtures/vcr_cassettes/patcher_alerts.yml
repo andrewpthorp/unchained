@@ -27,10 +27,10 @@ http_interactions:
       Server:
       - Microsoft-HTTPAPI/2.0
       Date:
-      - Fri, 22 Apr 2016 15:44:06 GMT
+      - Sat, 30 Apr 2016 20:28:37 GMT
     body:
       encoding: UTF-8
-      string: '[{"id": "56a98f8965fe574304e0a193","message": "A test message, please ignore","utcDateEnd": "2016-01-29T03:48:25.662Z","utcDateStart": "2016-01-28T03:48:25.662Z"}]'
+      string: '[{"id": "56a98f8965fe574304e0a193","message": "A test message, please ignore"}]'
     http_version:
-  recorded_at: Fri, 22 Apr 2016 15:44:27 GMT
+  recorded_at: Sat, 30 Apr 2016 20:28:41 GMT
 recorded_with: VCR 3.0.1

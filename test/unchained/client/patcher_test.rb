@@ -8,11 +8,16 @@ describe Unchained::Client::Patcher do
 
   describe '.patcher_hero_contents' do
     it 'should fetch from the API' do
-      VCR.use_cassette('patcher_hero_contents') do
+      VCR.use_cassette('patcher_hero_contents', re_record_interval: nil) do
         contents = @client.patcher_hero_contents
         assert_equal(4, contents.count)
 
-        content = contents.first
+        content = contents.find{|h| h.id == '56e8299ba7b0a06214e5602e'}
+        assert(
+          content,
+          "Expected to find a hero content with an `id` of '56e8299ba7b0a06214e5602e'.",
+        )
+
         assert(
           content.is_a?(Unchained::Client::Patcher::HeroContent),
           'Expected `contents` to return HeroContents.',
@@ -31,7 +36,12 @@ describe Unchained::Client::Patcher do
         alerts = @client.patcher_alerts
         assert_equal(1, alerts.count)
 
-        alert = alerts.first
+        alert = alerts.find{|a| a.id == '56a98f8965fe574304e0a193'}
+        assert(
+          alert,
+          "Expected to find an alert with an `id` of '56a98f8965fe574304e0a193'.",
+        )
+
         assert(
           alert.is_a?(Unchained::Client::Patcher::Alert),
           'Expected `alerts` to return Alerts.',

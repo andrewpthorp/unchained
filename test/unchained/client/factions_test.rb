@@ -12,7 +12,9 @@ describe Unchained::Client::Factions do
         factions = @client.factions
         assert_equal(4, factions.count)
 
-        faction = factions.first
+        faction = factions.find{|f| f.id == 0}
+        assert(faction, "Expected to find a faction with an `id` of 0.")
+
         assert(
           faction.is_a?(Unchained::Client::Factions::Faction),
           'Expected `factions` to return Factions.',

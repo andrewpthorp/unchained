@@ -8,7 +8,7 @@ describe Unchained::Client::MOTD do
 
   describe '.motd' do
     it 'should fetch from the API' do
-      VCR.use_cassette('motd') do
+      VCR.use_cassette('motd', re_record_interval: nil) do
         motd = @client.motd
 
         assert(

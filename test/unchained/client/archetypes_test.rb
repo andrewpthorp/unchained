@@ -12,7 +12,8 @@ describe Unchained::Client::Archetypes do
         archetypes = @client.archetypes
         assert_equal(9, archetypes.count, "Expected 9 archetypes")
 
-        archetype = archetypes.first
+        archetype = archetypes.find{|f| f.id == 7}
+        assert(archetype, "Expected to find an archetype with an `id` of 7.")
 
         assert(
           archetype.is_a?(Unchained::Client::Archetypes::Archetype),

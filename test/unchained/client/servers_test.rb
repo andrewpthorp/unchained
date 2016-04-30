@@ -12,7 +12,12 @@ describe Unchained::Client::Servers do
         servers = @client.servers
         assert_equal(4, servers.count)
 
-        server = servers.first
+        server = servers.find{|s| s.name == 'WyrmlingPrep'}
+        assert(
+          server,
+          "Expected to find a server with a `name` of 'WyrmlingPrep'.",
+        )
+
         assert_equal(6, server.access_level)
         assert_equal(4, server.channel_id)
         assert_equal('wyrmlingprep.camelotunchained.com', server.host)

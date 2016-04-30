@@ -12,7 +12,12 @@ describe Unchained::Client::Attributes do
         attributes = @client.attributes(1)
         assert_equal(37, attributes.count)
 
-        attribute = attributes.first
+        attribute = attributes.find{|a| a.name == 'Attunement'}
+        assert(
+          attribute,
+          "Expected to find an attribute with a `name` of 'Attunement'.",
+        )
+
         assert(
           attribute.is_a?(Unchained::Client::Attributes::AttributeInfo),
           'Expected `attributes(i)` to return AttributeInfos.',
@@ -35,7 +40,12 @@ describe Unchained::Client::Attributes do
         offsets = @client.attribute_offsets(1)
         assert_equal(12, offsets.count)
 
-        offset = offsets.first
+        offset = offsets.find{|f| f.gender == 1}
+        assert(
+          offset,
+          "Expected to find an attribute_offset with a `gender` of 1.",
+        )
+
         assert(
           offset.is_a?(Unchained::Client::Attributes::AttributeOffset),
           'Expected `attribute_offsets` to return AttributeOffsets.',
@@ -45,17 +55,12 @@ describe Unchained::Client::Attributes do
           offset.race.is_a?(Unchained::Client::Races::Race),
           'Expected `race` to be a Race.',
         )
-
         assert_equal(1, offset.gender)
 
-        # Assert a few of the hash elements.
         assert(
           offset.offsets.is_a?(Hash),
           'Expected `offsets` to be a Hash.',
         )
-        assert_equal(1.0, offset.offsets['Strength'])
-        assert_equal(-4.0, offset.offsets['Attunement'])
-        assert_equal(5.0, offset.offsets['Presence'])
       end
     end
   end
